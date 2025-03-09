@@ -98,7 +98,10 @@ try {
 }
 });
 
-
+app.get('/', (req, res) => {
+    res.send('Welcome to the Daily Metrics API!');
+  });
+  
 
 // Start the server
 app.listen(3000, () => {
